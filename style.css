@@ -1,0 +1,377 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* HOME PAGE */
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #B4D6C1;
+}
+
+.home-text{
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home-text h1{
+  font-size: 60px;
+  font-family: 'Shrikhand', cursive;
+}
+
+.home-img {
+  width: 325px;
+}
+
+/* nav bar */
+.nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Courier New', monospace;
+}
+
+/* hover after */
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #358873;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+/* hover animation */
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+/*
+.learn-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.learn-btn:hover{
+  border: 1px solid #4DB75E;
+  background: #4DB75E;
+  transition: 1s;
+}
+*/
+
+/* ABOUT PAGE */
+.about {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top 100px;
+  min-height: 100vh;
+  background-color: #8DC3A7;
+}
+
+.about-text {
+  width: 80%;
+  margin: auto;;
+  text-align: center;
+  padding-top: 100px;
+  color: #DFEAE2;
+}
+
+.about-text h1{
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Shrikhand', cursive;
+}
+
+.about-text p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+.about-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #DFEAE2;
+  border: 1px solid #DFEAE2;
+  padding: 12px 34px;
+  font-size: 15px;
+  font-weight: 400;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+}
+
+.about-btn:hover{
+  border: 1px solid #358873;
+  background: #358873;
+  transition: 1s;
+}
+
+/* PROJECTS PAGE */
+.projects {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top 100px;
+  min-height: 100vh;
+  background-color: #6BAF92;
+}
+
+.projects-text {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  color: #B4D6C1;
+}
+
+.projects-text h1{
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Shrikhand', cursive;
+}
+
+.projects-text p{
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+.projects-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #B4D6C1;
+  border: 1px solid #B4D6C1;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+}
+
+.projects-btn:hover{
+  border: 1px solid #358873;
+  background: #358873;
+  transition: 1s;
+}
+
+
+/* PICTURES PAGE */
+.pictures {
+  width: 100%;
+  margin: auto;
+  padding-top 100px;
+  min-height: 100vh;
+  background-color: #4E9C81;
+}
+
+.pictures-text {
+  margin-top: 20px;
+  color: #8DC3A7;
+  text-align: center;
+}
+
+.pictures-text h1{
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Shrikhand', cursive;
+}
+
+.img-grid {
+  margin: 5px;
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.img-grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Used when img takes up two columns*/
+.img-grid-col-2 {
+  grid-column: span 2;
+}
+
+/* Used when img takes up two rows*/
+.img-grid-row-2 {
+  grid-row: span 2;
+}
+
+/* anything undr 1024px */
+@media screen and (max-width: 1024px) {
+  .img-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
+/* ART & DESIGN PAGE */
+.design {
+  min-height: 150vh;
+  width: 100%;
+  background-color: #358873;
+}
+
+.design-text {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  color: #8DC3A7;
+  top: 50%;
+}
+
+.design-text h1{
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Shrikhand', cursive;
+}
+
+.design-text p{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Courier New', monospace;
+}
+
+.back-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #B4D6C1;
+  border: 1px solid #B4D6C1;
+  padding: 12px 34px;
+  font-size: 15px;
+  font-weight: 400;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.back-btn:hover{
+  border: 1px solid #6BAF92;
+  background: #6BAF92;
+  transition: 1s;
+}
+
+div.art {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: bottom;
+  width: 180px;
+  border: 1px solid #B4D6C1;
+  padding: 2px 2px;
+}
+
+div.art:hover {
+  border: 1px solid #6BAF92;
+  padding: 2px 2px;
+}
+
+div.art img {
+  width: 100%;
+  height: auto;
+}
+
+.code {
+  min-height: 200vh;
+  width: 100%;
+  background-color: #358873;
+}
+
+.code-text{
+  width: 90%;
+  color: #8DC3A7;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.code-text h1{
+  font-size: 35px;
+  font-family: 'Shrikhand', cursive;
+}
+
+.code-text p{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Courier New', monospace;
+}
+
+.code-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #8DC3A7;
+  border: 1px solid #8DC3A7;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+}
+
+.code-btn:hover{
+  border: 1px solid #358873;
+  background: #358873;
+  transition: 1s;
+}
+
+.mark {
+  background-color: #207567;
+  color:#8DC3A7;
+}

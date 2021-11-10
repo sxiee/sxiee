@@ -1,0 +1,131 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="with=device-wdith, initial-scale = 1.0">
+    <title> Sarah Xie's Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+     rel="stylesheet">
+    <link href=
+    "https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap"
+     rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Home Page -->
+    <section id="home" class="home">
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#pictures">pictures</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Scroll animation -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript">
+
+        $(function(){
+          $(".nav-links ul li a").on('click', function(){
+            $("html, body").animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+          });
+        });
+      </script>
+
+      <div class="home-text">
+        <h1> Hey! I'm Sarah! <h1>
+        <img class= "home-img" src="img/me.jpg" alt="sarah original">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#pictures">pictures</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="about-text">
+        <h1> About Me <h1>
+        <p> Hello! My name is Sarah! I'm a 2nd year student attending
+            Northeastern University majoring in Computer Science and minoring in
+            Interaction Design. I'm originally from Canton, Michigan but have
+            been living in Clarksville, Maryland for the past 9 years. I'm
+            particularly interested in software development, and web developemnt.
+            In my free time, I enjoy art, particularly painting in watercolor,
+            sketching and pen art! I also enjoy digital art. </p>
+
+        <a href = "mailto: xie.sar@northeastern.edu" class="about-btn">Email</a>
+        <a href="https://www.linkedin.com/in/sarah-xie-4a6b4a212/" class="about-btn">LinkedIn</a>
+        <a href="https://github.com/sxiee" class="about-btn">GitHub</a>
+        <a href="files/WebsiteResume.pdf" class="about-btn">Resume</a>
+
+      <div class="about-text">
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#pictures">pictures</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="projects-text">
+        <h1> Check out my Projects <h1>
+        <a href="code.html" class="projects-btn">code</a>
+        <a href="design.html" class="projects-btn">art + design</a>
+      <div class="projects-text">
+    </section>
+
+
+    <!-- Pictures -->
+    <section id="pictures" class="pictures">
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#pictures">pictures</a></li>
+          </ul>
+        </div>
+      </nav>
+
+          <div class="pictures-text">
+            <h1>Some Pictures...<h1>
+          </div>
+
+          <div class="img-grid">
+            <img src="img/sarah01.jpg" alt="sarah01">
+            <img src="img/friends01.jpg" alt="friends01">
+            <img src="img/&karen.jpg" alt="&karen">
+            <img src="img/hiking.jpg" alt="hiking">
+            <img src="img/&anna.jpg" alt="&anna">
+            <img src="img/bridge.jpg" alt="bridge">
+            <img src="img/hotpot.jpg" alt="hotpot">
+            <img src="img/sarah02.jpg" alt="sarah02">
+          </div>
+    </section>
+
+  </body>
+</html>
