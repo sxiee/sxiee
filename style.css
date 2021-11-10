@@ -307,17 +307,8 @@
 
 div.art {
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
   float: bottom;
   width: 180px;
-  border: 1px solid #B4D6C1;
-  padding: 2px 2px;
-}
-
-div.art:hover {
-  border: 1px solid #6BAF92;
-  padding: 2px 2px;
 }
 
 div.art img {
@@ -326,18 +317,16 @@ div.art img {
 }
 
 .code {
-  min-height: 200vh;
+  min-height: 150vh;
   width: 100%;
   background-color: #358873;
 }
 
 .code-text{
-  width: 90%;
+  width: 80%;
+  margin: auto;
   color: #8DC3A7;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
   text-align: center;
 }
 
