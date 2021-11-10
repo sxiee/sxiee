@@ -1,4 +1,4 @@
-### This is my personal website.
+### This is the code for my personal website. Check it out here: https://sxiee.github.io/
 
 <!--
 **sxiee/sxiee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
